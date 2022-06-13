@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Counter extends Component {
   state = {
-    iterator: 0,
+    value: this.props.value,
     items: ["item1", "item2", "item3"],
   };
 
@@ -11,29 +11,47 @@ class Counter extends Component {
     fontWeight: "bold",
   };
 
+  //   made the method to dynamically access the object with =>
+  handleIncrement = (product) => {
+    // this.props.value = 0;
+    this.setState({ value: this.state.value + 1 });
+  };
+  handleDelete = counterId => {
+    // This method creates a list and update it when an item is popped out of it and let React update the state of the object
+    const counters = this.state.counters.filter(
+      (c_id) => c_id.id !== counterId
+    );
+    this.setState({ counters });
+  };
+
   render() {
     let classes = this.getBadgeClasses();
     return (
       <div>
         <span className={classes}>Count: {this.formatCount()}</span>
         <button
-          onClick={this.handleIncrement}
+          onClick={() => this.props.handleIncrement()}
           className="btn btn-secondary btn-sm"
         >
           Increment
         </button>
-        <div>
-          {this.state.items.length === 0 && "Please add an item to your cart!"}
-          {this.renderTags()}
-        </div>
+        <button
+          onClick={()=>this.props.handleDelete}
+          className="btn btn-danger btn-sm m-2"
+        >
+          Delete
+        </button>
+        {
+          <div>
+            {this.props.children}
+            {this.state.items.length === 0 &&
+              "Please add an item to your cart!"}
+            {/* {this.renderTags()} */}
+          </div>
+        }
       </div>
     );
   }
-
-  //   made the method to dynamically access the object with =>
-  handleIncrement = () => {
-    this.setState({ iterator: this.state.iterator + 1 });
-  };
   renderTags() {
     if (this.state.items.length === 0)
       return <p>There are no items in the cart!</p>;
@@ -48,13 +66,13 @@ class Counter extends Component {
 
   getBadgeClasses() {
     let classes = "badge m-2 badge-";
-    classes += this.state.iterator === 0 ? "warning" : "primary";
+    classes += this.state.value === 0 ? "warning" : "primary";
     return classes;
   }
 
   formatCount() {
-    const { iterator } = this.state;
-    return iterator === 0 ? "Zero" : iterator;
+    const { value } = this.state;
+    return value === 0 ? "Zero" : value;
   }
 }
 
