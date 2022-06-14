@@ -10,16 +10,24 @@ class Counters extends Component {
       { id: 4, value: 4 },
     ],
   };
-
+ 
   handleReset = () => {
-    const counter = this.state.counters.map((c) => {
+    const counters = this.state.counters.map((c) => {
       c.value = 0;
       return c;
     });
+    this.setState({counters});
+  };
+  handleDelete = (counterId) => {
+    // This method creates a list and update it when an item is popped out of it and let React update the state of the object
+    const counters = this.state.counters.filter(
+      (c_id) => c_id.id !== counterId
+    );
+    this.setState({ counters });
   };
 
-  handleIncrement = (counter) => {
-    const counter = [...this.state.counters];
+  handleIncrement = counter => {
+    const counters = [...this.state.counters];
     const index = counters.indexOf(counter);
     counters[index] = { ...counter };
     counters[index].value++;
@@ -38,6 +46,7 @@ class Counters extends Component {
           <Counter
             key={counter.id}
             value={counter.value}
+            onIncrement= {this.handleIncrement}
             onDelete={this.handleDelete}
             counter={counter}
           >
