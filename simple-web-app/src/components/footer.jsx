@@ -11,7 +11,7 @@ const Footer = () => {
                     <i className="fab fa-facebook-f"></i>
                 </div>
                 <div className="copyright">
-                    Copyright &copy; 2021. Simple Web App
+                    Copyright &copy; 2022
                 </div>
             </div>
         </footer>
