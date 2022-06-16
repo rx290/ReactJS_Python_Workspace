@@ -24,6 +24,32 @@
 
 ### React Fundaments
 
+    React is a wrapper / component based UI library.
+    Which means it will have wrappers/components in a child parent relationship.
+    Twitter for example:
+    App
+        Navbar
+        Profile
+        Trends
+        Feed
+            Tweets
+            Likes
+            Comments
+
+    A wrapper or a component is basically a class with some state and render option.
+
+    eg:
+        class Tweet {
+
+            state = {};
+            render(){
+
+            }
+        }
+
+    State:
+        A state is basically a virtual representation of a DOM 
+
 ### Reuseable Components
 
 ### Data Rending
