@@ -1,15 +1,44 @@
-import "./header.css";
-import React from "react";
+import "./home.css";
+// import img from '../props/img.jpg';
+import { BsMouse } from "react-icons/bs";
+import { ToggleOff } from "@material-ui/icons";
+import Buttons from "./components/buttons/buttons";
 
-const Header = () => {
-  return <div id="home" className="container header-container">
-    <h3>
-        <p>
-        <span>'</span>m
-        </p>
-        <h2>Front Ender Web Developer</h2>
-    </h3>
-  </div>;
+const Home = () => {
+  return (
+    <div id="home" className="container home-container">
+      <div className="Logo">
+        <div className="main-img">
+          <span className="'circle"></span>
+          <span className="'circle"></span>
+          <span className="'circle"></span>
+          <span className="'circle"></span>
+          <span className="'circle"></span>
+          <span className="'circle"></span>
+          <span className="'circle"></span>
+          <span className="'circle"></span>
+        </div>
+        <img src="{img}" alt="" />
+      </div>
+      <a href="#footer" className="scroll-down">
+        <hr />
+        <h5>scroll down</h5>
+        <BsMouse className="scroll" />
+        <hr />
+      </a>
+      <h2>
+        <span>About Me</span>
+
+        <p>some text</p>
+      </h2>
+      <Buttons />
+    </div>
+  );
 };
 
-export default Header;
+const toogle = document.querySelector(".main-img");
+toogle.addEventListener("click", () => {
+  ToggleOff.classList.toggle("active");
+});
+
+export default Home;
