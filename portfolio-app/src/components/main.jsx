@@ -1,10 +1,10 @@
-import Header from './components/header/header';
-import Navbar from './components/Nav/nav';
-import Home from './components/home/home';
-import About from './components/about/about';
-import Members from "./components/members/members";
-import Contact from './components/contact/contact';
-import Footer from './components/footer/footer';
+import Header from './header/header';
+import Navbar from './nav/nav';
+import Home from './home/home';
+import About from './about/about';
+import Members from "./members/members";
+import Contact from './contact/contact';
+import Footer from './footer/footer';
 
 
 const WebPage = () => {

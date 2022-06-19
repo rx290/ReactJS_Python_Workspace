@@ -2,7 +2,7 @@ import "./home.css";
 // import img from '../props/img.jpg';
 import { BsMouse } from "react-icons/bs";
 import { ToggleOff } from "@material-ui/icons";
-import Buttons from "./components/buttons/buttons";
+import Buttons from "../button/button";
 
 const Home = () => {
   return (
@@ -36,9 +36,9 @@ const Home = () => {
   );
 };
 
-const toogle = document.querySelector(".main-img");
-toogle.addEventListener("click", () => {
-  ToggleOff.classList.toggle("active");
-});
+// const toogle = document.querySelector(".main-img");
+// toogle.addEventListener("click", () => {
+//   ToggleOff.classList.toggle("active");
+// });
 
 export default Home;
