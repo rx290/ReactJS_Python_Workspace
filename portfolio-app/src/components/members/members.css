@@ -1,0 +1,83 @@
+.member-txt{
+    font-size:20x;
+    top:10px;
+    font-weight:100;
+}
+
+.member-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: flex-start;
+    min-width: 100vh;
+    min-height: 100px;
+}
+
+.member-container .member{
+    position:relative;
+    display: flex;
+    justify-content:start;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    background-color:rgba(0, 0,0,0,0.014);
+    padding: 20px;
+    border-radius:50px;
+}
+
+.member-container .member .member-img{
+    height: 300px;
+    width:300px;
+    border: radius 40px;
+    background: url();
+    background-size: cover;
+    background-position: center;
+    border:2px solid var(--color-sec-light);
+
+}
+
+.member-container .member .member-info{
+    margin-left: 50px;
+    font-family: "Open Sans Condensed";
+    max-width:50%;
+}
+
+.member-container .member .member-info .name{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.member-container .member .member-info .position{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.member-container .member .member-info .about{
+    margin-top: 40px;
+    font-weight:100;
+    font-size: 17px;
+}
+
+.member-container .member .member-info.member-container .member .member-info .contact-member{
+    background: var(--color-sec-light);
+    padding: 17px 35px;
+    font-size: 18px;
+    margin-top: 50px;
+    border-radius: 50px;
+    position:absolute;
+    transition: 1s ease;
+
+}
+
+.member-container .member .member-info.member-container .member .member-info .contact-member spam{
+    text-transform: capitalize;
+}
+
+.member-container .member .member-info.member-container .member .member-info .contact-member:hover{
+    background: transparent;
+    border: 2px solid var(--color-sec-light);
+}
