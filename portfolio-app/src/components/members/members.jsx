@@ -11,7 +11,7 @@ const Members = () => {
           <h1 className="name">Chrys</h1>
           <h3 className="position">Leader</h3>
           <h4 className="about">
-            Lorem ipsum dolor sit amet consectetur adipiscing animal volupatate!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac sollicitudin elit, at suscipit ligula. Morbi lobortis turpis nec faucibus commodo. Sed tincidunt purus eu turpis porta, ultricies sodales velit eleifend. 
           </h4>
           <a href="#contact" className="contact-member">
             <span>contact</span>
@@ -26,7 +26,7 @@ const Members = () => {
           <h1 className="name">Chrys</h1>
           <h3 className="position">Leader</h3>
           <h4 className="about">
-            Lorem ipsum dolor sit amet consectetur adipiscing animal volupatate!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac sollicitudin elit, at suscipit ligula. Morbi lobortis turpis nec faucibus commodo. Sed tincidunt purus eu turpis porta, ultricies sodales velit eleifend. 
           </h4>
           <a href="#contact" className="contact-member">
             <span>contact</span>
@@ -40,7 +40,7 @@ const Members = () => {
           <h1 className="name">Chrys</h1>
           <h3 className="position">Leader</h3>
           <h4 className="about">
-            Lorem ipsum dolor sit amet consectetur adipiscing animal volupatate!
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac sollicitudin elit, at suscipit ligula. Morbi lobortis turpis nec faucibus commodo. Sed tincidunt purus eu turpis porta, ultricies sodales velit eleifend. 
           </h4>
           <a href="#contact" className="contact-member">
             <span>contact</span>

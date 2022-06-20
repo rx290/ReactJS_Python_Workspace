@@ -6,30 +6,32 @@
 .qualifications-container{
     position: absolute;
     display:flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     height: 80%;
     width: 90%;
     overflow-x: scroll;
     overflow-y: hidden;
+    margin:15px;
     user-select: none;
 }
 
-.qualifications-container .qualification{
-    position:absolute;
+.qualifications-container .qualifications{
+    position:relative;
     height: 550px;
     min-width: 40%;
     background: rgb(9,6,31);
     border-radius: 20px;
     margin: 0 20px 0 0;
     display: flex;
-    flex-direction: column;
-    justify-content:start;
+    justify-content:flex-start;
     align-items: center;
+    flex-direction: column;
+    flex-direction: column;
 
 }
 
-.qualifications-container .qualification .content{
+.content{
     height: 85%;
     width: 90%;
     border-radius: 15px;
@@ -39,17 +41,98 @@
 
 }
 
-.qualifications-container .qualification .content h1{
+.content h1{
     font-size: 20px;
     text-transform: uppercase;
     margin-top: 20px;
 }
 
-.qualifications-container .qualification .content .html{
-    background: url(../props/python.png);
+.html{
+    background: url(../props/html.png);
     background-position: center;
     background-size: 60px;
 
 }
 
+.css{
+    background: url(../props/css.png);
+    background-position: center;
+    background-size: 60px;
+
+}
+
+.Javascript{
+    background: url(../props/js.png);
+    background-position: center;
+    background-size: 60px;
+
+}
+
+.python{
+    background: url(../props/python.png);
+    background-position: center;
+    background-size: 60px;
+    
+
+}
+
+.bootstrap{
+    background: url(../props/bootstrap.png);
+    background-position: center;
+    background-size: 60px;
+    
+
+}
+
+.react{
+    background: url(../props/react.png);
+    background-position: center;
+    background-size: 60px;
+    
+
+}
+.flutter{
+    background: url(../props/flutter.png);
+    background-position: center;
+    background-size: 60px;
+
+}
+
+.kivy{
+    background: url(../props/kivy.png);
+    background-position: center;
+    background-size: 60px;
+
+}
+
+
+.robot-framework{
+    background: url(../props/robot.png);
+    background-position: center;
+    
+    background-size: 60px;
+
+}
+
+.api{
+    background: url(../props/api.png);
+    background-position: center;
+    background-size: 60px;
+
+}
+
+
+.c-sharp{
+    background: url(../props/csharp.png);
+    background-position: center;
+    background-size: 60px;
+
+}
+
+.salesforce{
+    background: url(../props/salesforce.png);
+    background-position: center;
+    background-size: 60px;
+
+}
 /* Make same conf for every other skill */

@@ -2,47 +2,68 @@ import "./qualifications.css"
 
 const Qualifications = () => {
     return (
-        <div>
-            <span className="quali-text">
+        <div id="#Qualification">
+            <span className="quali-text"> My Skills</span>
                 <div className="qualifications-container">
                     <div className="qualifications">
                         <div className="content html"></div>
-                        <h1 >html</h1>
+                        <h1 >HTML</h1>
                     </div>
+
                     <div className="qualifications">
                         <div className="content css"></div>
-                        <h1 >css</h1>
+                        <h1 >CSS</h1>
                     </div>
+                    
                     <div className="qualifications">
                         <div className="content Javascript"></div>
                         <h1 >Javascript</h1>
                     </div>
+                    
                     <div className="qualifications">
                         <div className="content bootstrap"></div>
-                        <h1 >bootstrap</h1>
+                        <h1 >Bootstrap</h1>
                     </div>
+                    
                     <div className="qualifications">
                         <div className="content react"></div>
-                        <h1 >react</h1>
+                        <h1 >React</h1>
                     </div>
+                    
                     <div className="qualifications">
                         <div className="content python"></div>
-                        <h1 >python</h1>
+                        <h1 >Python</h1>
                     </div>
+                    
                     <div className="qualifications">
                         <div className="content flutter"></div>
-                        <h1 >flutter</h1>
+                        <h1 >Flutter</h1>
                     </div>
+                    
                     <div className="qualifications">
                         <div className="content c-sharp"></div>
-                        <h1 >c-sharp</h1>
+                        <h1 >C-Sharp</h1>
                     </div>
+                    
                     <div className="qualifications">
                         <div className="content robot-framework"></div>
-                        <h1 >robot-framework</h1>
+                        <h1 >Robocorp Robot Framework</h1>
                     </div>
+                                        
+                    <div className="qualifications">
+                        <div className="content kivy"></div>
+                        <h1 >Kivy</h1>
+                    </div>
+                                        
+                    <div className="qualifications">
+                        <div className="content api"></div>
+                        <h1 >API Development</h1>
+                    </div>                    
+                    <div className="qualifications">
+                        <div className="content salesforce"></div>
+                        <h1 >Salesforce</h1>
+                    </div> 
                 </div>
-            </span>
         </div>
     );
 }

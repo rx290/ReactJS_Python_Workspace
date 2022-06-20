@@ -1,4 +1,4 @@
-.head-container{
+.home-container{
     position: relative;
     min-height:100vh;
     padding: 50px 40px;
@@ -20,7 +20,7 @@
     user-select: none;
 }
 
-.head-container .logo .main-img{
+.home-container .logo .main-img{
     position: absolute;
     height: 300px;
     width: 300px;
@@ -32,18 +32,20 @@
     cursor: pointer;
 }
 
-.home-container .logo .main-img.active{
-    animation: spin 8s linear 1s infinite;
-
-}
-
 @keyframes spin{
     to {
         transform: rotate(360deg);
     }
 }
 
-.head-container .logo .circle{
+.active{
+    animation: spin 8s linear 1s infinite;
+
+}
+
+
+
+.circle{
     position: absolute;
     height: 100px;
     width: 100px;
@@ -57,11 +59,11 @@
 
 }
 
-.head-container .logo .main-img.active .circle{
+.main-img.active .circle{
     opacity: 1;
 }
 
-.home-container .logo .main-img.active .circle:nth-child(1){
+.main-img.active .circle:nth-child(1){
     background:url(../props/html.png);
     background-size:cover;
     background-position: center;
@@ -74,7 +76,7 @@
     background-size:cover;
     background-position: center;
     position: absolute;
-    transform: translate(150%,-150%);
+    transform: translate(210%);
 }
 
 .home-container .logo .main-img.active .circle:nth-child(3){
@@ -83,6 +85,79 @@
     background-position: center;
     position: absolute;
     transform: translateY(210%);
+}
+
+
+.home-container .logo .main-img.active .circle:nth-child(4){
+    background:url(../props/bootstrap.png);
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-210%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(5){
+    background:url(../props/react.png);
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(170%,170%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(6){
+    background:url(../props/python.png);
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-170%,-170%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(7){
+    background:url(../props/flutter.png);
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(170%,-170%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(8){
+    background:url(../props/csharp.png);
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-170%,170%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(9){
+    background:url(../props/robot.png);
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+    transform: translateY(490%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(10){
+    background:url(../props/kivy.png);
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-490%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(11){
+    background:url(../props/api.png);
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+    transform: translateY(560%);
+}
+
+.home-container .logo .main-img.active .circle:nth-child(12){
+    background:url(../props/salesforce.png);
+    background-size:cover;
+    background-position: center;
+    position: absolute;
+    transform: translate(-560%);
 }
 
 /* add your skills odds on 210 and even on 150 to -150 */
@@ -125,9 +200,10 @@
 
 .home-container h2 p{
     font-size: 20px;
+    text-align: justify;
     opacity: 1;
     font-weight: 100;
-    margin-top: 1px;
+    margin-top: 10%;
     font-family: 'Open Sans', sans-serif;
     
 }

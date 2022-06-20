@@ -7,7 +7,7 @@
     padding: 0;
 }
 
-.button-container .btn{
+.btn{
     height: 80px;
     width: 200px;
     display: flex;
@@ -17,6 +17,7 @@
     color: var(--text-pri);
     transition:0.2s ease;
     overflow:hidden;
+    border-radius:0%;
 }
 
 .button-container a{
@@ -26,16 +27,16 @@
     font-size: 18px;
 }
 
-.button-container .btn.pri{
+.pri{
     border:2px solid var(--color-sec);
 }
 
-.button-container .btn.pri:hover{
+.pri:hover{
     border:none;
     background-color: var(--color-sec);
 }
 
-.button-container .btn.pri::before{
+.pri::before{
     position: absolute;
     content: '';
     height:100%;
@@ -44,7 +45,7 @@
     transition: 0.2s ease;
 }
 
-.button-container .btn.pri::after{
+.pri::after{
     position: absolute;
     content: '';
     height:100%;
@@ -53,7 +54,7 @@
     transition: 0.4s ease;
 }
 
-.button-container .btn.pri:hover::before{
+.pri:hover::before{
     position: absolute;
     content: '';
     height:100%;
@@ -62,7 +63,7 @@
     color:rgba(255, 255, 255, 0.274);
 } 
 
-.button-container .btn.pri:hover::after{
+.pri:hover::after{
     position: absolute;
     content: '';
     height:100%;
@@ -71,11 +72,11 @@
     color:rgba(255, 255, 255, 0.89);
 }
 
-.button-container .btn.sec{
+.sec{
     background: var(--color-pri-light);
 }
 
-.button-container .btn.sec::before{
+.sec::before{
     position: absolute;
     content: '';
     height:100%;
@@ -85,7 +86,7 @@
     transition: 0.2s ease;
 }
 
-.button-container .btn.sec::after{
+.sec::after{
     position: absolute;
     content: '';
     height:100%;
@@ -94,7 +95,7 @@
     background-color:rgba(255,255,255,0.0.89);
     transition: 0.4s ease;
 }
-.button-container .btn.sec:hover::before{
+.sec:hover::before{
     position: absolute;
     content: '';
     height:100%;
@@ -103,7 +104,7 @@
     /* color:rgba(255, 255, 255, 0.274); */
 } 
 
-.button-container .btn.sec:hover::after{
+.sec:hover::after{
     position: absolute;
     content: '';
     height:100%;

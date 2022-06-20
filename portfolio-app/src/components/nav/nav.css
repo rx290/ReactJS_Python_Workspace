@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     gap: 23px;
-    border: radius 50px;
+    border-radius: 50px;
     animation: fade-nav-in 1s ease 1 1s forwards;
 
 }
@@ -22,7 +22,7 @@
     }
 }
 
-.navigation a{
+a{
     position: relative;
     background-color: rgba(0, 0, 0,0.377);
     border-radius:50%;
@@ -37,17 +37,17 @@
     fill: rgba(200,217,252);
 }
 
-.navigation .icon.active-nav{
+.active-nav{
     fill:rgba(88,117,248);
     border: 2px solid rgba(88,117,248);
 }
 
-.navigation .icon:hover{
+.icon:hover{
     fill:rgba(88,117,248,0.151);
     border: 2px solid rgba(88,117,248,0.192);
 }
 
-.navigation .icon.active-nav:hover{
+.active-nav:hover{
     fill:rgba(88,117,248);
     border: 2px solid rgba(88,117,248);
 }
