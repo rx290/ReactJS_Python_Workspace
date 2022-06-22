@@ -61,3 +61,42 @@
 ## Project Theme
 
     This project is very basic and simple it will focus on creating a shopping cart mechanism using ReactJS
+
+## Question/Answers
+
+### What is React?
+
+    React is a java script library developed by facebook which is mainly used for building UIs based on components.
+
+### React js vs React Native?
+
+    <table>
+    <thead>
+    <tr>
+        <th>React JS</th>
+        <th>React Native</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+    </table>
+
+### Features of React JS?
+
+### How does React JS work?
+
+### Lifecycle of React?
+
+### What are hooks? Most Common Hooks?
+
+### What is Redux?
+
+### What is flux?
+
+### What is Router?
+
+### What is ref?
