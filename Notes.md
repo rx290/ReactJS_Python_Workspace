@@ -70,20 +70,20 @@
 
 ### React js vs React Native?
 
-    <table>
-    <thead>
-    <tr>
-        <th>React JS</th>
-        <th>React Native</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td></td>
-        <td></td>
-    </tr>
-    </tbody>
-    </table>
+<table>
+<thead>
+<tr>
+<th>React JS</th>
+<th>React Native</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 ### Features of React JS?
 
