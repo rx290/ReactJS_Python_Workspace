@@ -213,7 +213,6 @@
 
 ### State VS Props
 
-
 <table>
 <thead>
 <tr>
@@ -297,7 +296,6 @@
 </tbody>
 </table>
 
-
 #### Using Variables
 
     Define a variable with var, const or let and pass it to curly braces
@@ -311,3 +309,38 @@
 #### React Fragment
 
     <></> this is an empty wrapper called react fragment where we can write code and pass it to anything.
+
+#### Props
+
+    Props are shot form for properties and these are custom inputs for the components or I can say attributes which can be passed to the components as a parameter.
+
+    Every component has a builtin keyword called props and we have to pass it to the function or the class before access it.
+    
+    for example
+
+const Person = (props) => {
+  return (
+    <>
+    <h1>Name: {props.f_name}</h1>
+
+    <h2>Last Name: {props.l_name}</h2>
+
+    <h2>Age: {props.age}</h2>
+    </>
+  );
+}
+
+<Person f_name={'Asad'} l_name{'Waseem'} age{'immortal'}/>
+
+#### State
+
+    State is the current condition of the component and is mutable 
+    To understand the concept of state we need to understand following things:
+    1. Hooks
+        Any keyword which uses Use Keyword is a hook and has special reservation when it comes to play.
+    2. Getter and Setters
+        These are actual functions which set and get the value of the target object when the state changes
+    3. Arrow or Anonymous Functions
+        Anonymous or () => {}; functions are basically a name less function which gets call on the runtime
+
+    To understand more about the state please view counter App
