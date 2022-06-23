@@ -296,3 +296,18 @@
 </tr>
 </tbody>
 </table>
+
+
+#### Using Variables
+
+    Define a variable with var, const or let and pass it to curly braces
+    use { var_name } to use a variable inside of function or classes.
+    We can also do basic arithmetic in it.
+
+#### Ternary operator
+
+    {Some_condition ? statement_if_true : statement_if_false}
+
+#### React Fragment
+
+    <></> this is an empty wrapper called react fragment where we can write code and pass it to anything.
