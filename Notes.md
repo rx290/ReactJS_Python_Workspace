@@ -262,6 +262,14 @@
 
 ### What is ref?
 
+    Ref is a short form for reference and it is generally used to point to some method or component.
+    To create ref we use the hook CreateRef and to use ref we use the hook useref
+    The useRef Hook allows you to persist values between renders.
+    It can be used to store a mutable value that does not cause a re-render when updated.
+    It can be used to access a DOM element directly.
+    useRef() only returns one item. It returns an Object called current.
+    When we initialize useRef we set the initial value: useRef(0)
+
 ### React Routing VS Conventional Routing
 
 <table>
