@@ -50,17 +50,10 @@
     State:
         A state is basically a virtual representation of a DOM 
 
-### Reuseable Components
-
-### Data Rending
-
 ### Event Handling
 
-### App Debugging
-
-## Project Theme
-
-    This project is very basic and simple it will focus on creating a shopping cart mechanism using ReactJS
+    1. it can only uses CamelCase for names
+    2. we pass a function as the event handler, rather than a string
 
 ## Question/Answers
 
@@ -177,6 +170,12 @@
 
 ### What are components of React?
 
+    The ability to modulate the UI / Functional Element to reduce code redundancy is known as Componentization.
+
+### Reuseable Components
+
+    Each module is called a component and we can initiate and reuse these components wherever and however we like
+ 
 ### Class Components VS Functional Components
 
 <table>
@@ -252,13 +251,77 @@
 
 ### Lifecycle of React?
 
+    1. Mounting
+       1. Constructor()
+       2. getDerivedStateFromProps()
+       3. render()
+       4. componentDidMount()
+    2. Updating
+       1. getDerivedStateFromProps()
+       3. ShouldComponentUpdate()
+       4. render()
+       5. getSnapshotBeforeUpdate()
+       6. componentDidUpdate()
+    3. Unmounting
+       1. ComponentWillUnmount()
+
+### Lifecycle of Functional Components?
+
+### Lifecycle of Class based components?
+
 ### What are hooks? Most Common Hooks?
+
+    Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.
+
+    Hooks allow us to "hook" into React features such as state and lifecycle methods.
+
+    Most common types of hooks are as follows:
+    1. useState
+    2. useEffect
+    3. useContext
+    4. useRef
+    5. useReducer
+    6. useCallback
+    7. useMemo
+
+    You must import Hooks from react.
+
+    Here we are using the useState Hook to keep track of the application state.
+
+    State generally refers to application data or properties that need to be tracked.
+    Hook Rules
+
+    There are 3 rules for hooks:
+
+    1. Hooks can only be called inside React function components.
+    2. Hooks can only be called at the top level of a component.
+    3. Hooks cannot be conditional
+
+    Note: Hooks will not work in React class components.
 
 ### What is Redux?
 
 ### What is flux?
 
 ### What is Router?
+
+    Create React App doesn't include page routing.
+    React Router is the most popular solution.
+
+    if we are using a multi-level page routing than the folder structure should be as follows:
+
+    In the src folder, we'll create a folder named pages with several files:
+
+    src\pages\:
+
+        Layout.js
+        Home.js
+        Blogs.js
+        Contact.js
+        NoPage.js
+
+    Each file will contain a very basic React component.
+
 
 ### What is ref?
 
@@ -352,3 +415,40 @@ const Person = (props) => {
         Anonymous or () => {}; functions are basically a name less function which gets call on the runtime
 
     To understand more about the state please view counter App
+
+### UseEffect
+
+    UseEffect is another popular hook which is invoked on the mounting of the component it is utilized to prevent side-effects of the class based components.
+
+    UseEffect are usually used for fetching data from API for example:
+
+    const api_url = 'www.someurl.com';
+    const[solution, setSolution] = setState('');
+
+    useEffect(()=>{
+        // creating an asynchronous function
+        const fetched_words = async () => {
+            // creating a constant response to apply immutability for the fetched data
+            const response = await fetch(api_url);
+            // Extracting data
+            const wordbank = await response.json();
+            // Using random and floor function to fetch random data from word bank
+            const randomword = wordbank[Math.floor(Math,random() * wordbank.length]);
+            // Updating state
+            setSolution(randomword);
+
+        }
+        fetched_words()
+    },[]);
+
+    <div>{solution}</div>
+
+### Context API
+
+### Routing and its Type
+
+### Forms
+
+### How to get out of refresh paradigm of useffect
+
+### what is formig in react forms
